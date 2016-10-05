@@ -27,13 +27,4 @@
             :url url})))
 
 ;;robot
-(declare robots id name color ipaddress url)
-(defentity robots)
-
-(defn get-robots [] (select robots))
-
-(defn get-robot [id]
-  (-> 
-    (select* robots)
-    (where {:id id})
-    (exec)))
+;TBD

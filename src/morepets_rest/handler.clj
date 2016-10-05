@@ -18,8 +18,7 @@
 (defn delete-pet [id])
 
 ;;robots
-(defn get-robots [] (response (mpdb/get-robots)))
-(defn get-robot [id] (response (mpdb/get-robot id)))
+;TBD
 
 
 ;;routes
@@ -33,10 +32,6 @@
                                             (PUT "/" {body :body} (update-pet id body))
                                             (DELETE "/" [] (delete-pet id))))))
  
- (context "/robots" [] (defroutes robots-routes
-                        (GET "/" [] (get-robots))
-                        (context "/:id" [id] (defroutes robots-routes
-                                              (GET "/" [] (get-robot id))))))
  (route/not-found "404 Not Found"))
 
 
