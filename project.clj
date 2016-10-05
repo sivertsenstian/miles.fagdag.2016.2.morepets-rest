@@ -1,5 +1,4 @@
 (defproject morepets-rest "0.1.0-SNAPSHOT"
-  ;:main morepets-rest.core
   :description "Aint nobody got time for that"
   :url "http://www.stianerbest.com"
   :min-lein-version "2.0.0"
